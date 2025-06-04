@@ -101,33 +101,33 @@ public class CompagniaAerea {
             Piloti.add(pilota);
         }
 
-    // Metodo che stampa tutte le informazioni disponibili
-    public void displayInformazioni() { // stampo tutte le informazioni della Compagnia aerea
-        System.out.println("=== Informazioni Compagnia: VolaATerra for Europe ===");        // da aggiungere in un costruttore standard
-        System.out.println("=== Flotta Aerei ===");
-        if (Flotta.isEmpty()) {     // check se c'è almeno un elemento nella lista
-            System.out.println("Nessun aereo presente.");
-        } else {
-            for (Aereo aereo : Flotta) {
-                System.out.println("Modello: " + aereo.getModello());   // richiamo dei metodi pubblici ger per ottnere modello, numero posti e codice
-                System.out.println("Numero posti: " + aereo.getNumeroPosti());
-                System.out.println("Codice: " + aereo.getCodice());
-                System.out.println("---------------------");
+        // Metodo che stampa tutte le informazioni disponibili
+        public void displayInformazioni() { // stampo tutte le informazioni della Compagnia aerea
+            System.out.println("=== Informazioni Compagnia: VolaATerra for Europe ===");        // da aggiungere in un costruttore standard
+            System.out.println("=== Flotta Aerei ===");
+            if (Flotta.isEmpty()) {     // check se c'è almeno un elemento nella lista
+                System.out.println("Nessun aereo presente.");
+            } else {
+                for (Aereo aereo : Flotta) {
+                    System.out.println("Modello: " + aereo.getModello());   // richiamo dei metodi pubblici ger per ottnere modello, numero posti e codice
+                    System.out.println("Numero posti: " + aereo.getNumeroPosti());
+                    System.out.println("Codice: " + aereo.getCodice());
+                    System.out.println("---------------------");
+                }
+            }
+    
+            System.out.println("=== Piloti ===");   
+            if (Piloti.isEmpty()) {     // check se c'è almeno un elemento nella lista
+                System.out.println("Nessun pilota presente.");
+            } else {
+                for (Pilota pilota : Piloti) {  // richiamo dei metodi pubblici ger per ottnere nome, numero brevetto e ore di volo
+                    System.out.println("Nome: " + pilota.getNome());
+                    System.out.println("Numero brevetto: " + pilota.getNumeroBrevetto());
+                    System.out.println("Ore di volo: " + pilota.getOreVolo());
+                    System.out.println("---------------------");
+                }
             }
         }
-
-        System.out.println("=== Piloti ===");   
-        if (Piloti.isEmpty()) {     // check se c'è almeno un elemento nella lista
-            System.out.println("Nessun pilota presente.");
-        } else {
-            for (Pilota pilota : Piloti) {  // richiamo dei metodi pubblici ger per ottnere nome, numero brevetto e ore di volo
-                System.out.println("Nome: " + pilota.getNome());
-                System.out.println("Numero brevetto: " + pilota.getNumeroBrevetto());
-                System.out.println("Ore di volo: " + pilota.getOreVolo());
-                System.out.println("---------------------");
-            }
-        }
-    }
     } // fine classe Compagnia
 
 
