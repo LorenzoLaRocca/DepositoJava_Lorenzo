@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 // SET EDITARE I METODI DI INSERIMENTO
+// Extra: andare a creare i filtri di ricerca DA FARE
 
 public class CompagniaAerea {
     
