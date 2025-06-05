@@ -32,9 +32,9 @@ class Ristorante {
 }
 
 class Utente {
-    protected String nome;
-    protected String email;
-    protected float soldi;
+    private String nome;
+    private String email;
+    private float soldi;
 
     public Utente(String nome, String email) {
         this.nome = nome;
@@ -112,14 +112,14 @@ public class EsercizioEreditarieta {
                     System.out.print("Inserisci l'email: ");
                     String email = scanner.nextLine();
 
-                    System.out.print("Vuoi essere (N)ormale, (C)hef o (R)itico? ");
-                    String ruolo = scanner.nextLine().toUpperCase();
+                    System.out.print("Vuoi essere N. Normale, C. Chef o R. Critico? ");
+                    String ruolo = scanner.nextLine().toLowerCase();
 
                     switch (ruolo) {
-                        case "C":
+                        case "c":
                             utente = new Chef(nome, email);
                             break;
-                        case "R":
+                        case "r":
                             utente = new Critico(nome, email);
                             break;
                         default:
